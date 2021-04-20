@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Calculator
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+    <button class="calculatorButton" (click)="calculatorFunction('1', 'number')">1</button>
+    <button class="calculatorButton" (click)="calculatorFunction('2', 'number')">2</button>
+    <button class="calculatorButton" (click)="calculatorFunction('3', 'number')">3</button>
+    <button class="calculatorButton" (click)="calculatorFunction('+', 'add')">+</button>
+  </div>
+  <div>
+    <button class="calculatorButton" (click)="calculatorFunction('4', 'number')">4</button>
+    <button class="calculatorButton" (click)="calculatorFunction('5', 'number')">5</button>
+    <button class="calculatorButton" (click)="calculatorFunction('6', 'number')">6</button>
+    <button class="calculatorButton" (click)="calculatorFunction('-', 'subtract')">-</button>
+  </div>
+  <div>
+    <button class="calculatorButton" (click)="calculatorFunction('7', 'number')">7</button>
+    <button class="calculatorButton" (click)="calculatorFunction('8', 'number')">8</button>
+    <button class="calculatorButton" (click)="calculatorFunction('9', 'number')">9</button>
+    <button class="calculatorButton" (click)="calculatorFunction('*', 'multiply')">*</button>
+  </div>
+  <div>
+    <button class="calculatorButton" (click)="calculatorFunction('.', 'period')">.</button>
+    <button class="calculatorButton" (click)="calculatorFunction('0', 'number')">0</button>
+    <button class="calculatorButton" (click)="calculatorFunction('=', 'equals')">=</button>
+    <button class="calculatorButton" (click)="calculatorFunction('/', 'divide')">/</button>
+  </div>
+
+  <br>
+
+  <div class="calculatorDiv">
+    <p id="calculatorTextArea">0</p>
+  </div>
+
+  <button class="calculatorReset" (click)="calculatorReset()">Reset calculator
+    <span id="calculatorResetTooltip" class="calculatorResetTooltip">Reset all numbers in the calculator</span>
+  </button>
+  <button class="calculatorExpand" (click)="calculatorExpand()">Expand buttons
+    <span id="calculatorExpandTooltip" class="calculatorExpandTooltip">Expand or contract all other buttons</span>
+  </button>
+</ion-content>

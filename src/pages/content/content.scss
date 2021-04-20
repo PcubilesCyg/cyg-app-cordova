@@ -1,0 +1,164 @@
+////////////////////////////////////////////////////////////
+
+//Number button
+.calculatorButton{
+    transition-duration: 2s;
+    color: white;
+    background-color: #FB772F;
+    min-width: 5%;
+    height: 0;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    font-size: 25px;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+}
+
+//Expanded number button
+.calculatorButtonExpanded{
+    min-width: 10%;
+    height: 0;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    font-size: 45px;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+}
+
+//When you hover over the button
+.calculatorButton:hover {
+    transition-duration: 0.25s;
+    background-color: #E25E16;
+}
+
+//When you are pressing the button
+.calculatorButton:active {
+    transition-duration: 0.125s;
+    background-color: #FF9048;
+}
+
+////////////////////////////////////////////////////////////
+
+//The TextBox where the result will be
+.calculatorDiv {
+    transition-duration: 2s;
+    border: black;
+    border-style: solid;
+    max-width: 23.5%;
+
+    background-color: #FF9048;
+    font-size: 25px;
+    margin: 0.5%;
+    padding: 0.5%;
+}
+
+.calculatorDivExpanded {
+    border: black;
+    border-style: solid;
+    max-width: 43.5%;
+
+    background-color: #FF9048;
+    font-size: 45px;
+    margin: 0.5%;
+    padding: 0.125%;
+}
+
+////////////////////////////////////////////////////////////
+
+//Reset number button
+.calculatorReset{
+    transition-duration: 2s;
+    border: black;
+    border-style: solid;
+
+    background-color: #FF9048;
+
+    font-size: 25px;
+    margin: 2.5%;
+    padding: 0.5%;
+}
+
+//The tooltip
+.calculatorResetTooltip{
+    visibility: hidden;
+    width: 230px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 75%;
+    left: 6%;
+    margin-left: -60px;
+}
+
+//When you hover over the button
+.calculatorReset:hover {
+    transition-duration: 0.25s;
+    background-color: #E25E16;
+}
+
+//The tooltip when you hover over the button
+.calculatorReset:hover .calculatorResetTooltip {
+    visibility: visible;
+}
+
+
+//When you are pressing the button
+.calculatorReset:active {
+    transition-duration: 0.125s;
+    background-color: #FF9048;
+}
+
+////////////////////////////////////////////////////////////
+
+//Expand number button
+.calculatorExpand{
+    border: black;
+    border-style: solid;
+
+    background-color: #FF9048;
+
+    font-size: 25px;
+    margin: 0.5%;
+    padding: 0.5%;
+}
+
+//The tooltip
+.calculatorExpandTooltip{
+    visibility: hidden;
+    width: 230px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 75%;
+    left: 20%;
+    margin-left: -60px;
+}
+
+//When you hover over the button
+.calculatorExpand:hover {
+    transition-duration: 0.25s;
+    background-color: #E25E16;
+}
+
+//The tooltip when you hover over the button
+.calculatorExpand:hover .calculatorExpandTooltip {
+    visibility: visible;
+}
+
+//When you are pressing the button
+.calculatorExpand:active {
+    transition-duration: 0.125s;
+    background-color: #FF9048;
+}
+
+////////////////////////////////////////////////////////////
